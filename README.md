@@ -1,36 +1,29 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+https://docs.google.com/document/d/1OQUGArHBPpPxzBeDEZMlAtz7iyLNnTY8Hm3J6wNgnr0/edit?tab=t.0
 
-## Getting Started
+https://www.sophiepatersoninteriors.com/
+https://theconstructionsolution.com/
+https://slotpredictorai.com/
+https://www.themaxletters.com/
+https://rokostechnology.com/
+https://legacyinjuryclinics.com/
+http://new.moss.at/
+https://clinicadentalvitalcr.com/en/
+https://franchiseepros.com/
+https://loftkingsuk.co.uk/
+https://www.elsvanderhelm.com/
+https://charismatic-cleaners.com/
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1.⁠ ⁠https://stg-xiente-staging.kinsta.cloud/
+ 2.⁠ ⁠https://chauffeurserviceamsterdam.com
+ 3.⁠ ⁠https://www.a-brighter-scent.com/
+ 4.⁠ ⁠https://photo2pixel-lemon.vercel.app/
+ 5.⁠ ⁠https://vedx.se
+ 6.⁠ ⁠https://www.cuvvaa.com
+ 7.⁠ ⁠https://notere.eu/
+ 8.⁠ ⁠https://www.guinservice.com
+ 9.⁠ ⁠https://panteracapital.com
+10.⁠ ⁠https://lemonchiffon-vulture-569892.hostingersite.com
+11.⁠ ⁠https://myloxstar.myshopify.com/
+12.⁠ ⁠https://bestbroker.live/
+13.⁠ ⁠https://tdeecalculator.net/
+14.⁠ ⁠http://lonftkingsuk.sumanpatwary.com/
