@@ -34,7 +34,7 @@ export function About() {
               <div className="absolute inset-0 bg-linear-to-tr from-primary/20 via-transparent to-transparent z-10" />
               <div className=" bg-[#0A0A0A] flex items-center justify-center">
                 <Image
-                  src="/profile-3.png"
+                  src="/profile.png"
                   alt="Suman Patwary"
                   fill
                   className="object-cover"

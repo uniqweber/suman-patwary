@@ -166,7 +166,7 @@ export function Portfolio() {
     <section id="portfolio" className="section-padding  ">
       <div className="max-w-7xl mx-auto px-6">
         {/* --- Header & Filters --- */}
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-10 mb-20">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-10 mb-10 lg:mb-20">
           <div className="space-y-4 max-w-xl">
             <h2 className="text-5xl md:text-6xl font-bold tracking-wide md:tracking-normal uppercase mb-6">
               Recent Projects.
@@ -183,7 +183,7 @@ export function Portfolio() {
               <button
                 key={cat}
                 onClick={() => setFilter(cat)}
-                className={`px-5 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest transition-all ${
+                className={`px-3.5 lg:px-5 py-2 rounded-full text-[9px] lg:text-[10px] font-bold uppercase tracking-widest leading-none transition-all ${
                   filter === cat
                     ? "bg-primary text-white shadow-sm"
                     : "text-white/30 hover:text-white hover:bg-white/2"
@@ -210,7 +210,7 @@ export function Portfolio() {
                 <Link
                   href={project.link}
                   target="_blank"
-                  className="group flex flex-col md:flex-row md:items-center justify-between py-6 hover:px-2 hover:md:px-5  border-b border-white/5 hover:bg-white/1 transition-all duration-500  relative overflow-hidden"
+                  className="group flex justify-between py-6 hover:px-2 hover:md:px-5  border-b border-white/5 hover:bg-white/1 transition-all duration-500  relative overflow-hidden"
                 >
                   {/* Subtle Background Slide Effect */}
                   <div className="absolute inset-0 bg-linear-to-r from-primary/3 to-transparent -translate-x-full group-hover:translate-x-0 transition-transform duration-700 ease-in-out" />
@@ -231,7 +231,7 @@ export function Portfolio() {
                     </div>
                   </div>
 
-                  <div className="mt-6 md:mt-0 flex items-center gap-8 relative z-10">
+                  <div className=" flex items-center gap-8 relative z-10">
                     <span className="hidden sm:block text-[9px] font-black uppercase tracking-[0.3em] text-white/10 group-hover:text-primary/50 transition-colors">
                       {project.category}
                     </span>

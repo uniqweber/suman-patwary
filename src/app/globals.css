@@ -90,3 +90,7 @@
   width: max-content;
   animation: marquee 30s linear infinite;
 }
+
+::-webkit-scrollbar{
+  width: 0px;
+}

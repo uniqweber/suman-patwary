@@ -18,8 +18,8 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Suman Patwary | Custom Websites & Development",
-  description: "I build fast, beautiful websites that help your business grow.",
+  title: "Suman Patwary | Custom WordPress & Next.js Developer",
+  description: "Expert web developer building high-converting, SEO-optimized websites. Specializing in custom WordPress, MVP development, Next.js, and website redesigns.",
 };
 
 export default function RootLayout({
