@@ -1,26 +1,92 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-primary: #FF4500;
+  /* --color-primary: #FF3831; */
+  --color-primary-light: #FF6F61;
+  --color-bg-dark: #181616;
+  --color-bg-card: #0f0f11;
+  --color-text-main: #F5E8D8;
+
+  --font-display: "Bebas Neue", sans-serif;
+  --font-body: "Space Grotesk", sans-serif;
+
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer base {
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+
+  body {
+    @apply bg-bg-dark text-text-main  selection:bg-primary/30 selection:text-white;
+    font-family: var(--font-space), "Space Grotesk", sans-serif !important;
+  }
+
+  h1,
+  h2,
+  h4,
+  .brand-font {
+    font-family: var(--font-bebas), "Bebas Neue", sans-serif !important;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .section-padding {
+    @apply py-24 md:py-32;
+  }
+
+  .subtitle {
+    @apply text-lg md:text-xl text-white/50 font-medium;
+  }
+
+  .premium-card {
+    @apply bg-bg-card border border-white/5 rounded-2xl p-8 transition-all duration-700 hover:border-primary/30 hover:shadow-[0_0_50px_rgba(99,102,241,0.05)];
+  }
+
+  .btn-highlight {
+    @apply px-10 py-4 rounded-full bg-primary text-white font-bold transition-all duration-500 hover:bg-primary-light hover:shadow-[0_0_30px_rgba(99,102,241,0.4)] active:scale-95 text-xs uppercase tracking-widest;
+  }
+
+  .btn-outline {
+    @apply px-10 py-4 rounded-full border border-white/10 text-white font-bold transition-all duration-500 hover:bg-white/5 active:scale-95 text-xs uppercase tracking-widest;
+  }
+
+  .highlight-purple {
+    @apply text-primary;
+  }
+
+  /* Reveal Animation */
+  .reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .reveal-on-scroll.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Swiper Styling */
+.swiper-pagination-bullet {
+  @apply bg-white/10 opacity-100! w-1.5! h-1.5!;
+}
+.swiper-pagination-bullet-active {
+  @apply bg-primary w-10! rounded-full!;
+  transition: width 0.3s ease;
+}
+
+
+/* Marquee Animation */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
 }
