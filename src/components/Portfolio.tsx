@@ -1,63 +1,166 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { ArrowRight, ArrowUpRight, Code2, Globe, Layout } from "lucide-react";
+import { ArrowUpRight, Code2, Globe, Layout, ShoppingBag } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
-const categories = ["All", "Custom Code", "WordPress", "Wix"];
+const categories = [ "WordPress", "Custom Code", "Shopify", "Wix"];
 
 const projects = [
   {
-    title: "Eco-Stream SaaS",
-    subtitle: "Real-time analytics dashboard for energy monitoring",
-    category: "Custom Code",
-    link: "#",
-    icon: Code2,
-  },
-  {
-    title: "Nexus Agency",
-    subtitle: "Premium portfolio for a London-based creative studio",
+    title: "Sophie Paterson",
+    subtitle: "High-end luxury interior design portal",
     category: "WordPress",
-    link: "#",
+    link: "https://www.sophiepatersoninteriors.com/",
     icon: Layout,
   },
   {
+    title: "Composio",
+    subtitle: "Platform for building powerful AI agents",
+    category: "Custom Code",
+    link: "https://composio.dev/",
+    icon: Code2,
+  },
+  {
+    title: "A Brighter Scent",
+    subtitle: "Luxury fragrance e-commerce experience",
+    category: "Shopify",
+    link: "https://www.a-brighter-scent.com/",
+    icon: ShoppingBag,
+  },
+  {
+    title: "Chauffeur Amsterdam",
+    subtitle: "Premium chauffeur service & booking system",
+    category: "WordPress",
+    link: "https://chauffeurserviceamsterdam.com",
+    icon: Layout,
+  },
+  {
+    title: "Granola AI",
+    subtitle: "Intelligent meeting notes with AI assistance",
+    category: "Custom Code",
+    link: "https://www.granola.ai/",
+    icon: Code2,
+  },
+  {
     title: "Luxe Decor",
-    subtitle: "Minimalist furniture store with high conversion rate",
+    subtitle: "Interior decor store with conversion focus",
     category: "Wix",
     link: "#",
     icon: Globe,
   },
   {
-    title: "Fintech App",
-    subtitle: "Secure mobile-first banking interface for startups",
+    title: "Loft Kings UK",
+    subtitle: "Construction and loft conversion specialist",
+    category: "WordPress",
+    link: "https://loftkingsuk.co.uk/",
+    icon: Layout,
+  },
+  {
+    title: "Lemma Studio",
+    subtitle: "Creative digital experiences and design",
     category: "Custom Code",
-    link: "#",
+    link: "https://lemma.studio/",
     icon: Code2,
   },
   {
-    title: "Traveler Pro",
-    subtitle: "Booking system and travel guide for global explorers",
+    title: "Myloxstar Store",
+    subtitle: "Fashion and retail Shopify development",
+    category: "Shopify",
+    link: "https://myloxstar.myshopify.com/",
+    icon: ShoppingBag,
+  },
+  {
+    title: "Legacy Injury Clinics",
+    subtitle: "Medical and healthcare services platform",
     category: "WordPress",
-    link: "#",
+    link: "https://legacyinjuryclinics.com/",
+    icon: Layout,
+  },
+  {
+    title: "Brainwave",
+    subtitle: "Advanced AI landing page with futuristic UI",
+    category: "Custom Code",
+    link: "https://brainwave-uniqweber.vercel.app/",
+    icon: Code2,
+  },
+  {
+    title: "Franchisee Pros",
+    subtitle: "Business franchise consulting portal",
+    category: "WordPress",
+    link: "https://franchiseepros.com/",
     icon: Layout,
   },
   {
     title: "Urban Loft",
-    subtitle: "Boutique real estate landing page with interactive maps",
+    subtitle: "Real estate landing page for boutique lofts",
     category: "Wix",
     link: "#",
     icon: Globe,
   },
+  {
+    title: "Rokos Technology",
+    subtitle: "IT solutions and technology services",
+    category: "WordPress",
+    link: "https://rokostechnology.com/",
+    icon: Layout,
+  },
+  {
+    title: "Lovistro",
+    subtitle: "Premium boutique e-commerce application",
+    category: "Custom Code",
+    link: "https://lovistro.com/",
+    icon: Code2,
+  },
+  {
+    title: "Clinica Dental Vital",
+    subtitle: "Professional dental care & booking portal",
+    category: "WordPress",
+    link: "https://clinicadentalvitalcr.com/en/",
+    icon: Layout,
+  },
+  {
+    title: "Giuli Gartner",
+    subtitle: "Photographer & creative director portfolio",
+    category: "Custom Code",
+    link: "https://www.giuligartner.com/",
+    icon: Code2,
+  },
+  {
+    title: "Els Van Der Helm",
+    subtitle: "Performance coaching and sleep expertise",
+    category: "WordPress",
+    link: "https://www.elsvanderhelm.com/",
+    icon: Layout,
+  },
+  {
+    title: "Charismatic Cleaners",
+    subtitle: "Professional cleaning services landing page",
+    category: "WordPress",
+    link: "https://charismatic-cleaners.com/",
+    icon: Layout,
+  },
+  {
+    title: "Slot Predictor AI",
+    subtitle: "AI-powered prediction tools showcase",
+    category: "WordPress",
+    link: "https://slotpredictorai.com/",
+    icon: Layout,
+  },
+  {
+    title: "The Max Letters",
+    subtitle: "Personal branding and messaging service",
+    category: "WordPress",
+    link: "https://www.themaxletters.com/",
+    icon: Layout,
+  },
 ];
 
 export function Portfolio() {
-  const [filter, setFilter] = useState("All");
+  const [filter, setFilter] = useState("WordPress");
 
-  const filteredProjects = projects.filter(
-    (p) => filter === "All" || p.category === filter,
-  );
+  const filteredProjects = projects.filter((p) => p.category === filter);
 
   return (
     <section id="portfolio" className="section-padding  ">
@@ -143,7 +246,7 @@ export function Portfolio() {
         </div>
 
         {/* --- Compact Footer --- */}
-        <div className="mt-20 flex justify-center">
+        {/* <div className="mt-20 flex justify-center">
           <Link
             href="/all-projects"
             className="group flex items-center gap-3 text-white/20 hover:text-white transition-all py-3 bg-white/3 hover:bg-primary rounded-full px-7 border border-white/5"
@@ -153,7 +256,7 @@ export function Portfolio() {
             </span>
             <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );

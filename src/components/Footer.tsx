@@ -95,9 +95,12 @@ export function Footer() {
                     name: "Upwork",
                     href: "https://upwork.com/freelancers/sumanpatwary",
                   },
-                  { name: "Fiverr", href: "https://fiverr.com/sumanpatwary" },
+                  {
+                    name: "Fiverr",
+                    href: "https://www.fiverr.com/suman_patwary?source=gig_page&gigs=slug%3Aclone-copy-duplicate-design-redesign-any-website%2Cpckg_id%3A1",
+                  },
                   { name: "GitHub", href: "https://github.com/sumanpatwary" },
-                  { name: "WhatsApp", href: "https://wa.me/8801777868445" },
+                  { name: "WhatsApp", href: "https://wa.me/+8801777868445" },
                   { name: "Telegram", href: "https://t.me/sumanpatwary" },
                 ].map((social) => (
                   <Link
